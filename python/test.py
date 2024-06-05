@@ -17,6 +17,18 @@ class Health:
         if self.cur_hp > self.max_hp:
             self.cur_hp = self.max_hp
 
+
+
+class Buff:
+    def __init__(self):
+        pass
+
+class Debuff:
+    def __init__(self):
+        pass
+
+
+
 class Normal:
     def __init__(self):
         self.name = "Normal Attack"
@@ -27,7 +39,10 @@ class Normal:
 
 class Slash:
     def __init__(self):
-        pass
+        self.name = "Slash"
+        self.scale = 1.5
+
+
 
 class Bat:
     def __init__(self):
@@ -44,3 +59,7 @@ class Player:
             print(id + 1, " | ", skill, sep='')
 
 Player().show_skill()
+
+class Battle:
+    def __init__(self):
+        pass
